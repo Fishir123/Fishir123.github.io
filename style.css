@@ -1,0 +1,129 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rasa:wght@300&family=Rye&display=swap');
+/* Responsive */
+/* ! Mobile CSS */
+/* Navbar */
+.navbar {
+  z-index: 4;
+  padding-top: 20px;
+  background-color: black;
+  font-family: 'Rye';
+}
+.navbar-brand {
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+}
+.nav-item {
+  margin-right: 1em;
+}
+/* Utility  */
+.btn-success.tombol {
+  background-color: #647b3a;
+  border: 3px solid #647b3a;
+  width: 100%;
+}
+.btn-success {
+  background-color: #647b3a;
+  border: 3px solid #647b3a;
+}
+.btn-success:hover {
+  background-color: #4d6129;
+  border: 3px solid #4d6129;
+}
+/* Jumbotron */
+.jumbotron {
+  height: 800px;
+  padding-left: 15px;
+  background-color: black;
+  z-index: 2;
+  font-family: 'Rasa';
+}
+.jumbotron .container-fluid {
+  position: relative;
+  z-index: 4;
+}
+.jumbotron p {
+  color: rgba(255, 255, 255, 0.4);
+}
+.jumbotron .row .col.mt-5 p:last-child {
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 12em;
+}
+.chr {
+  display: none;
+  transform: scale(1.5);
+  margin-top: 195px;
+  margin-right: 45px;
+  filter: brightness(0.6);
+}
+/* ! Dekstop CSS */
+@media (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    z-index: 4;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+  .nav-item {
+    margin-right: 1em;
+  }
+  /* Utility  */
+  body {
+    overflow-x: hidden;
+  }
+  .btn-success {
+    background-color: #647b3a;
+    border: 3px solid #647b3a;
+    padding: 5px 20px;
+  }
+  /* .btn-secondary {
+    background-color: #818181;
+    border: transparent;
+    padding: 6px 5px;
+    border-radius: 5px;
+  } */
+  .btn-success:hover {
+    background-color: #4d6129;
+    border: 3px solid #4d6129;
+  }
+  /* .btn-secondary:hover {
+    background-color: #818181;
+    border: transparent;
+  } */
+  /* Jumbotron */
+  .jumbotron {
+    background: url(img/background-titan.jpg) no-repeat;
+    margin-top: -83px;
+    background-size: cover;
+    height: 1024px;
+    padding-left: 15px;
+    background-color: #c4c4c4;
+    z-index: 2;
+  }
+  .jumbotron .container-fluid {
+    position: relative;
+    z-index: 4;
+  }
+  .jumbotron p {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .jumbotron .row .col.mt-5 p:last-child {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 12em;
+  }
+  .chr {
+    display: inline-block;
+    transform: scale(1.5);
+    margin-top: 195px;
+    margin-right: 45px;
+    filter: brightness(0.6);
+  }
+  .black {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    height: 1059px;
+    z-index: 2;
+  }
+}
